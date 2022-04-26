@@ -7,8 +7,7 @@ console.log(`Number of categories: ${categories.children.length}`);
 // console.log(first.querySelector("ul").children.length);
 
 const list =[...categories.children] ;
-// console.log(list);
 for (const item of list) {
-     console.log(`Category: ${item.querySelector("h2").textContent}`);
+console.log(`Category: ${item.querySelector("h2").textContent}`);
 console.log(`Elements: ${item.querySelector("ul").children.length}`);
 }
