@@ -10,8 +10,6 @@ const refs = {
 
 refs.input.addEventListener('input', onInputChange);
 
-console.log(refs.input.textContent);
-
 function onInputChange(event) {
     if (event.currentTarget.value === '') {
         return refs.output.textContent = "Anonymous";
