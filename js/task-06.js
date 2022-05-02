@@ -16,8 +16,6 @@ function onInputClear(event) {
 }
 function onInputChange(event) {
     // console.log(event.currentTarget.value.length);
-    
-    
     if (event.currentTarget.value.length !== Number(textInput.dataset.length)) {
         textInput.classList.add('invalid');
     } else {

@@ -34,19 +34,22 @@ const refs = {
   destroyBtn: document.querySelector("button[data-destroy]"),
   boxesContainer: document.querySelector("#boxes"),
 }
-// let boxNumbers=0;
-let boxSide = 20;
+
 refs.inputeValue.addEventListener('input', onInputValue);
 // refs.createBtn.addEventListener("click", createBoxes);
 refs.destroyBtn.addEventListener("click", onClearBtnClick);
 
 function onInputValue(event) {
  const boxNumbers =  Number(event.currentTarget.value);
-  console.log(`это чисто квадратов ${boxNumbers}`);
+  // console.log(`это чисто квадратов ${boxNumbers}`);
 
   refs.createBtn.addEventListener("click", createBoxes);
   function createBoxes(event) {
   
+    refs.boxesContainer.innerHTML = '';
+    let boxSide = 20;
+    const elementsGrape = [];
+    
   for (let i = 1; i <= boxNumbers; i += 1) {
     boxSide += 10;
     const box = document.createElement("div");
@@ -54,13 +57,11 @@ function onInputValue(event) {
     box.style.width = `${boxSide}px`;
     box.style.height = `${boxSide}px`;
     box.style.margin = "20px"
-    refs.boxesContainer.append(box);
-  }
+    elementsGrape.push(box);
+    }
+    refs.boxesContainer.append(...elementsGrape);
 }
-
 }
-
- 
 
 refs.boxesContainer.style.display = "flex";
 refs.boxesContainer.style.flexWrap = "wrap";

@@ -14,5 +14,5 @@ function onInputChange(event) {
     if (event.currentTarget.value === '') {
         return refs.output.textContent = "Anonymous";
     }
-       refs.output.textContent = event.currentTarget.value;
+    refs.output.textContent = event.currentTarget.value;
 }

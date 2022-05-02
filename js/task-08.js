@@ -33,8 +33,6 @@ function onSubmitBtn(event) {
         [passwordForm.name]: passwordForm.value,
     };
     console.log(objForm);
-    console.dir();
-
     event.currentTarget.reset();
 }
 

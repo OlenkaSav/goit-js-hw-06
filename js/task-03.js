@@ -26,9 +26,3 @@ galeryList.style.justifyContent = "space-between";
 galeryList.querySelector("img").style.height = "400px";
 galeryList.querySelector("img").style.objectFit = "cover";
 
-// let img = galeryList.querySelectorAll('img');
-// console.log(img);
-
-// galeryList.style.
-// galeryList.width = "360 px";
-// list.insertAdjacentHTML("beforebegin", "<h2>Popular technologies</h2>");
