@@ -46,10 +46,10 @@ function onInputValue(event) {
   refs.createBtn.addEventListener("click", createBoxes);
   function createBoxes(event) {
   
-    refs.boxesContainer.innerHTML = '';
+    // refs.boxesContainer.innerHTML = '';
     let boxSide = 20;
     const elementsGrape = [];
-    
+
   for (let i = 1; i <= boxNumbers; i += 1) {
     boxSide += 10;
     const box = document.createElement("div");
